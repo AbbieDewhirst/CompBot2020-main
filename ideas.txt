@@ -1,0 +1,5 @@
+IDEAS
+
+
+Drive Acceleration Ramp with different deceleration Ramp
+

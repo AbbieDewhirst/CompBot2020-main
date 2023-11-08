@@ -1,0 +1,50 @@
+************************************************************************
+
+THESE ARE DETAILED CHANGELOGS
+
+Hopefully this will let us keep track of the changes we've made and any comments associated with those changes in more DETAIL
+
+
+FORMAT SHOULD BE:
+
+Entry Number - Date - Time - Name
+
+Details
+
+************************************************************************
+
+
+1 - Feb 24, 2020 - 2:06am - Anmol
+
+Added new auto mode that feeds from ally and then picks up balls from trench run (11 ball auto)
+
+Added reverse turn shoot to auto modes
+
+Added code to turn limelight on when vision is being used and off when we aren't using it. Not sure if it will work but we can test again (same code john made just trying in different locations to see if we can turn on and off)
+
+I think I fixed hood issue when shooting... someone set the using vision boolean to false which is not correct. Changed to true. Additionally, I added a usingvision boolean to the ShootBallCommandGroup so we can decide for each
+situation whether we want to use vision or not when shooting ( we most likely will always want to use vision but maybe in the future we can change it to have "sweet spot" hood and flywheel speeds for known locations)
+
+Turn in place command I reduced minimum speed and made some QoL changes. I also changed the exit condition in the hopes the robot turns more accurately. NEED TO TEST
+
+
+
+2 - Feb 24, 2020 - 12:50am - Anmol
+
+Added command ExtendIntakeandGrabBallsCommand for TELEOP (extends intake and picks up balls on a while held)
+
+Added Anti-Jam code for conveyor and organizers to the Light Curtain Command
+
+Changed DriveStraightWithGyro turning speed (hopefully this provides a better result)
+
+3,4 - Feb 24, 2020 - 9:00pm - Anmol
+
+Fixed antijam and pushed code for reference
+
+Tuned Automode, Tuned turning PID, tuned hood angle and flywheel speed
+
+
+5 - Feb 25, 2020
+
+Increased turret turning speed from 0.4 to 1.0 for set pos command. Will speed up auto modes by a few seconds
+
